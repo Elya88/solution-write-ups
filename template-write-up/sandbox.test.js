@@ -34,7 +34,6 @@ describe("Add up the Numbers from a Single Number ", () => {
       let num = 13;
          expect(addUp(num)).toEqual(91);
     })
-   
-    })
+   })
 
 
