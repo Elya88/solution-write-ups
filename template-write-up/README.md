@@ -1,49 +1,55 @@
-# [challengeName](link-to-challenge)
+# [Add up the Numbers from a Single Number](https://edabit.com/challenge/4gzDuDkompAqujpRi)
 
-<!--
-  describe the function's behavior in your own words.
-  explain why someone might want to use this function
--->
+Create a function that takes a number as an argument. Add up all the numbers from
+ 1 to the number you passed to the function. For example, if the input is 4 then
+  your function should return 10 because 1 + 2 + 3 + 4 = 10.
 
 ## Syntax
 
-> functionName(`type`, `type`, ...) -> `type`
+> addUp(`Number`) -> `Number`
 
 ### Parameters
 
-**paramName**: `paramType`
+**Number**: `Number`
 
-<!--
-  describe the parameter
--->
+Expect any positive number between 1 and 1000
 
-### Return Value: `type`
+### Return Value: `Number`
 
-<!--
-  describe the return value
--->
+Add up all the numbers from
+ 1 to the number you passed to the function
 
 ## Test Cases
 
-<!--
-  copy in the test cases from the original challenge
-
-  if you write your own test cases in a sandbox file, include those too
--->
+* if the input is 4 then
+  your function should return 10 because 1 + 2 + 3 + 4 = 10.
+* if the input is letters the function should return "confirm to let the user
+   enter number not letters".
+* if the input is 0 then the function should return
+  return "confirm to let the user
+   enter number from 1+ ".
 
 ## Use Cases
 
-<!--
-  write a minimum of 2 use cases to show this functions behavior.
 
-  try to find interesting _edge cases_, it's good for you ;)
-  an edge case is when a function behaves different than you'd expect.
-  This will help you and others better understand the function.
+if someone wants to know the sum of number from 1 to the number that he give to the function he can use this:
 
-  https://www.geeksforgeeks.org/dont-forget-edge-cases/
--->
+Add up the Numbers from a Single Number:
+
+```js
+const number = 4;
+const result = addUp(4);
+console.log(result); // 10
+```
+
 
 ---
+
+## Strategy
+
+we will use for loop to sum the number from 1 to the number that the user input and
+ write an if condition to check if the user enter letters,emptyspace or 0.
+ the return will be alert to told him to correct his input
 
 ## Retrospective
 
