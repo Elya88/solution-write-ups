@@ -1,5 +1,16 @@
 /* eslint-disable linebreak-style */
+
+/**
+ * message to show in case the user didn't use correct input type
+ * @type {string}
+ */
 const message = 'please enter a number';
+
+/**
+ * Add up the Numbers from a Single Number
+ * @param {Number} num - The number we want to add up to
+ * @returns {number|string} The total add up number or a message
+ */
 const addUp = (num) => {
   if (num === '' || num === ' ' || isNaN(num)) {
     return message;
